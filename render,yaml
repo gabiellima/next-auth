@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: auth-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://bielxlima999:<N6x57zL.CvqZVWw>@cluster0.lvyb3yj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
